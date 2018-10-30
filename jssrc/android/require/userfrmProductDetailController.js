@@ -4,7 +4,6 @@ define({
         this.displayData(navInfo.data);
     },
     displayData: function(sku) {
-        debugger;
         var data = {
             "sku": sku
         };
@@ -20,7 +19,6 @@ define({
         productDetailPromise.then(function(response) {
             kony.application.dismissLoadingScreen();
             kony.print("Response:" + JSON.stringify(response));
-            debugger;
             var productDetail = response.products === undefined ? null : response.products[0];
             self.renderProductDetail(productDetail);
         }, function(error) {
@@ -35,7 +33,6 @@ define({
         productReviewsPromise.then(function(response) {
             kony.application.dismissLoadingScreen();
             kony.print("Response:" + JSON.stringify(response));
-            debugger;
             var productReviews = response.reviews === undefined ? null : response.reviews;
             self.renderProductReviews(productReviews);
         }, function(error) {
@@ -44,7 +41,6 @@ define({
         });
     },
     renderProductDetail: function(productDetail) {
-        debugger;
         if (productDetail !== null) {
             this.view.flxDetailProductContent.isVisible = true;
             this.view.lblName.text = productDetail.name;
@@ -77,7 +73,6 @@ define({
         }
     },
     populateReviewSegment: function(productReviews) {
-        debugger;
         var data = [];
         for (var i = 0; i < productReviews.length; i++) {
             var widthRating = this.calculateWidthForRating(productReviews[i].rating) + "%";

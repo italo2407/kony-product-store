@@ -46,7 +46,6 @@ define({
         productsPromise.then(function(response) {
             kony.application.dismissLoadingScreen();
             kony.print("Response:" + JSON.stringify(response));
-            debugger;
             var products = response.products === undefined ? null : response.products;
             //self.renderProductList(products);
             self.verifyProductLength(products);
@@ -56,12 +55,10 @@ define({
         });
     },
     onClickProductSegment: function() {
-        debugger;
         var selectedRow = this.view.sgmProductList.selectedRowItems[0];
         navigationForm("frmProductDetail", selectedRow.sku, null);
     },
     displayData: function(navInfo) {
-        debugger;
         kony.application.showLoadingScreen(null, "Loading...", constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, null);
         var input = {};
         var data = {};
@@ -79,7 +76,6 @@ define({
         this.getProducts(input);
     },
     renderProductList: function(products) {
-        debugger;
         if (products === null && gblInfo.origin === "search") {
             this.view.lblProductHeader.text = "No results for " + gblInfo.data;
             this.view.sgmProductList.isVisible = false;

@@ -50,7 +50,6 @@ define({
         this.view.lblNavigation.text = navigation;
     },
     renderSubCategoriesOrShowProductList: function(category) {
-        debugger;
         if (category === null || category.subCategories === null || category.subCategories === undefined || category.subCategories.length === 0) {
             var selectedRow = this.view.sgmCategories.selectedRowItems[0];
             navigationForm("frmProductList", selectedRow, "categoryList");
@@ -95,12 +94,10 @@ define({
         var self = this;
 
         function animationStartCallBack() {
-            debugger;
             if (isNeedEndCallback !== null && !isNeedEndCallback) self.view.searchComponent.isVisible = isVisibleSearchComp;
         }
 
         function animationEndCallBack() {
-            debugger;
             if (isNeedEndCallback !== null && isNeedEndCallback) self.view.searchComponent.isVisible = isVisibleSearchComp;
         }
         var animDef = {
@@ -146,21 +143,18 @@ define({
         this.view.flxScrollMainContent.animate(animation.animObj, animation.animConfig, animation.callbacks);
     },
     onClickSearch: function() {
-        debugger;
         this.animationSearchComponent("0", "10%", 0.0, 1.0, false, true);
         this.animationSegmentListCategory("10%", "20%", 1.0, 1.0, null, null);
     },
     onClickCancelSearch: function() {
-        debugger;
         this.animationSearchComponent("10%", "0", 1.0, 0.0, true, false);
         this.animationSegmentListCategory("20%", "10%", 1.0, 1.0, null, null);
+        this.view.searchComponent.searchValue = "";
     },
     onSearchDone: function() {
-        debugger;
         navigationForm("frmProductList", this.view.searchComponent.searchValue, "search");
     },
     postShow: function() {
-        debugger;
         if (!this.view.sgmCategories.isVisible) {
             kony.application.showLoadingScreen(null, "Loading...", constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, null);
         }

@@ -6,8 +6,7 @@ define({
  },
  
  displayData:function(sku){
-    debugger;
-   	var data={"sku":sku};
+    var data={"sku":sku};
     var inputProductDetail = buildInputRequest(SERVICE_NAME, GET_PRODUCT_DETAIL, {},data);
     var inputProductReviews = buildInputRequest(SERVICE_NAME, GET_PRODUCT_REVIEWS, {},data);
     this.getProductDetail(inputProductDetail);
@@ -21,7 +20,6 @@ define({
     productDetailPromise.then(function(response){
       kony.application.dismissLoadingScreen();
       kony.print("Response:"+JSON.stringify(response));
-      debugger;
       var productDetail=response.products===undefined?null:response.products[0];
       self.renderProductDetail(productDetail);
     },function(error){
@@ -37,7 +35,6 @@ define({
     productReviewsPromise.then(function(response){
       kony.application.dismissLoadingScreen();
       kony.print("Response:"+JSON.stringify(response));
-      debugger;
       var productReviews=response.reviews===undefined?null:response.reviews;
       self.renderProductReviews(productReviews);
     },function(error){
@@ -47,8 +44,7 @@ define({
  },
  
  renderProductDetail:function(productDetail){
-   	debugger;
- 	if(productDetail !== null){
+   	if(productDetail !== null){
       this.view.flxDetailProductContent.isVisible=true;
       this.view.lblName.text=productDetail.name;
       this.view.lblPrice.text="$ "+productDetail.salePrice;
@@ -84,8 +80,7 @@ define({
  },
   
  populateReviewSegment:function(productReviews){
-   debugger;
-   var data=[];
+    var data=[];
     for(var i=0;i<productReviews.length;i++){
     	var widthRating=this.calculateWidthForRating(productReviews[i].rating)+"%";
       	data[i]={
@@ -122,6 +117,5 @@ define({
     	kony.print("navigationInfo :: "+ JSON.stringify(navigationInfo));
     	navigationForm(kony.application.getPreviousForm().id, navigationInfo.data, navigationInfo.origin);  
     }
-    
  }
 });
