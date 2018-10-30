@@ -1,0 +1,85 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_children_": [],
+    "_height_": {
+        "type": "string",
+        "value": "10%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_render_": true,
+    "_skin_": "sf6f6e3b06f749f4b929d8d8b09a02e1",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "areflexpropsreferenced": false,
+    "canUpdateUI": true,
+    "clipbounds": true,
+    "containerweight": 0,
+    "dataDiffs": {
+        "headerBorder": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "i5de49c8451c4dce974070eab6fcda9e",
+                "srcKUID": "fac7f05f6b4d4ba1a05c42bd36f94b2f",
+                "wType": "Label"
+            }
+        },
+        "headerMaster": {
+            "__events__": {},
+            "__info__": {
+                "isRoot": true,
+                "kuid": "da4670b1a18e4b328849f7c551d27a0f",
+                "srcKUID": "c03df15039254d1796d68e0561728cd3",
+                "wType": "FlexContainer"
+            }
+        },
+        "imgLogo": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "c164b57a66c54477b089508e474ffd19",
+                "srcKUID": "a16eb79a2e894e61a4875d7d2f0af541",
+                "wType": "Image"
+            }
+        }
+    },
+    "id": "headerMaster",
+    "info": null,
+    "iscustomlayout": false,
+    "isdatareferenced": false,
+    "isvisible": true,
+    "kuid": "da4670b1a18e4b328849f7c551d27a0f",
+    "layouttype": 2,
+    "masterType": 0,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "frmHome",
+    "pf": "frmHome",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "snaptogrid": true,
+    "sourceUserWidget": "c03df15039254d1796d68e0561728cd3",
+    "wType": "UserWidgetInstance"
+}

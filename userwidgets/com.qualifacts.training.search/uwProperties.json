@@ -1,0 +1,86 @@
+{
+    "classname": "search",
+    "definitions": {
+        "apis": {
+            "custom": [],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "a070c28365b54587962c20fab4d58df9",
+                    "originalPropertyKey": "onClick",
+                    "propertyIndex": 1,
+                    "propertyKey": "onClickCancel",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "action",
+                        "displayName": "onClickCancel",
+                        "srcWidget": "btnCancel",
+                        "type": "action",
+                        "uiRepresentation": "Label-Label-Button-Button",
+                        "wType": "Button"
+                    },
+                    "srcWgtKUID": "g0ac3ced035743a9a6d1a30f0f6bcef0"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "d476bd2a3a224ca8b08808f8ef873d21",
+                    "originalPropertyKey": "onDone",
+                    "propertyIndex": 2,
+                    "propertyKey": "onDoneSearch",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "action",
+                        "displayName": "onDoneSearch",
+                        "srcWidget": "txtSearch",
+                        "type": "action",
+                        "uiRepresentation": "Label-Label-Button-Button",
+                        "wType": "TextField"
+                    },
+                    "srcWgtKUID": "c97e2fb9d5a04e18b4b05a0c68516a65"
+                }
+            ]
+        },
+        "groups": {
+            "apis": [],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "ad2206f3ac464435aa0098346edcc945",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 1,
+                    "propertyKey": "searchValue",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Search Value",
+                        "srcWidget": "txtSearch",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "TextField"
+                    },
+                    "srcWgtKUID": "c97e2fb9d5a04e18b4b05a0c68516a65"
+                }
+            ]
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.qualifacts.training",
+    "version": "1.0.0"
+}
