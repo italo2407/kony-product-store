@@ -233,5 +233,6 @@
     "watchos_notificationcentericon_38": "",
     "watchos_notificationcentericon_42": "",
     "watchos_watchMarketing1x": "",
-    "enableactionbar": false
+    "enableactionbar": false,
+    "tabletstartupformkey": "d4ec31c5c6ec49879cf984ed88cec68d"
 }

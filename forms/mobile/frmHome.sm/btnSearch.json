@@ -4,7 +4,7 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "10%"
+        "value": "100%"
     },
     "_margin_": [
         6,
@@ -30,7 +30,7 @@
     },
     "_width_": {
         "type": "string",
-        "value": "15%"
+        "value": "100%"
     },
     "canUpdateUI": true,
     "containerweight": 100,
@@ -39,16 +39,16 @@
     "displaytext": true,
     "focusskin": "sdfdf3fa214540e8bde714441b76ac25",
     "id": "btnSearch",
-    "ide_onClick": "AS_Button_a4aae667a2484c078f2a791695584907",
+    "ide_onClick": "AS_Button_i0aefb29b93b4a148c888cf277dc7f80",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
     "kuid": "fe25349ce15b4753ba751723cd95bed2",
     "name": "kony.ui.Button",
-    "parent": "frmHome",
+    "parent": "flxSearchBtn",
     "pf": "frmHome",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "wType": "Button",
-    "zindex": 1
+    "zindex": 99999
 }

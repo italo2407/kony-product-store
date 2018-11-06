@@ -1,0 +1,54 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_skin_": "sdfdf3fa214540e8bde714441b76ac25",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {},
+    "displaytext": true,
+    "focusskin": "sdfdf3fa214540e8bde714441b76ac25",
+    "id": "btnSearch",
+    "ide_onClick": "AS_Button_d75a6341d94440b899e4a0a41d97e95c",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "hfdbad543db04fa4924234e8bbe24994",
+    "name": "kony.ui.Button",
+    "parent": "flxSearchBtn",
+    "pf": "frmHome",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "wType": "Button",
+    "zindex": 99999
+}

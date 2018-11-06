@@ -32,11 +32,10 @@
     "canUpdateUI": true,
     "children": [
         "headerMaster",
-        "Search",
-        "btnSearch",
         "flxScrollMainContent",
         "searchComponent",
-        "flxBack"
+        "flxBack",
+        "flxSearchBtn"
     ],
     "configureExtendBottom": false,
     "containerweight": 100,
@@ -114,7 +113,7 @@
     "needappmenu": false,
     "paddinginpixel": false,
     "platform": "iphone",
-    "prevDevice": "iPhone8",
+    "prevDevice": "GalaxyS7",
     "prevPlatform": "android",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

@@ -50,7 +50,7 @@ define({
       this.view.lblPrice.text="$ "+productDetail.salePrice;
       var isVisibleOnSale=productDetail.onSale==="false"?false:true;
       this.view.lblOnsale.isVisible=isVisibleOnSale;
-      this.view.lblDescripcion.text=productDetail.description;
+      this.view.lblDescripcion.text=productDetail.description!=="null" ? productDetail.description : "";
       this.view.imgProduct.src=productDetail.image;
       var isVisibleAvgUserRating=(productDetail.customerReviewAverage === undefined || productDetail.customerReviewAverage === "null") ? false : true;
       this.view.flxAveReview.isVisible=isVisibleAvgUserRating;
@@ -59,7 +59,7 @@ define({
         var widthRating=this.calculateWidthForRating(productDetail.customerReviewAverage)+"%";
         this.view.flxUnfilledStart.width=widthRating;
       }
-      this.view.lblNumberReview.text="Number of Reviews:"+productDetail.customerReviewCount;
+      this.view.lblNumberReview.text=productDetail.customerReviewCount!=="null" ? "Number of Reviews:"+productDetail.customerReviewCount : "";
     }
    	else{
     	alert("This product does not contain information");

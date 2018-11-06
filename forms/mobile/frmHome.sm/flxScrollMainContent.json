@@ -26,7 +26,7 @@
     "_skin_": "sf2a1c22623d426eadfd6b7997aa56d3",
     "_top_": {
         "type": "string",
-        "value": "10%"
+        "value": "72dp"
     },
     "_width_": {
         "type": "string",
@@ -38,8 +38,7 @@
     "bounces": true,
     "canUpdateUI": true,
     "children": [
-        "lblNavigation",
-        "sgmCategories"
+        "flxMainContent"
     ],
     "clipbounds": true,
     "containerweight": 100,
@@ -53,6 +52,14 @@
     "isvisible": true,
     "kuid": "b53d336976bf41ce9adda57e7bd6a990",
     "layouttype": 4,
+    "minheight": {
+        "type": "string",
+        "value": "95%"
+    },
+    "minwidth": {
+        "type": "string",
+        "value": "100%"
+    },
     "name": "kony.ui.FlexScrollContainer",
     "pagingenabled": false,
     "parent": "frmHome",

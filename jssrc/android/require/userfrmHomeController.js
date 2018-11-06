@@ -58,9 +58,8 @@ define({
             this.populateSegment(category.subCategories);
             this.buildBreadcrumbs(category.path);
             this.showButtonBack(category.path);
+            this.view.flxMainContent.isVisible = true;
             kony.application.dismissLoadingScreen();
-            this.view.sgmCategories.isVisible = true;
-            this.view.lblNavigation.isVisible = true;
         }
     },
     animationCategorySegment: function() {
@@ -93,11 +92,11 @@ define({
     animationWidget: function(topStart, topEnd, opacityStart, opacityEnd, isNeedEndCallback, isVisibleSearchComp) {
         var self = this;
 
-        function animationStartCallBack() {
+        function animationStartCallBack1() {
             if (isNeedEndCallback !== null && !isNeedEndCallback) self.view.searchComponent.isVisible = isVisibleSearchComp;
         }
 
-        function animationEndCallBack() {
+        function animationEndCallBack1() {
             if (isNeedEndCallback !== null && isNeedEndCallback) self.view.searchComponent.isVisible = isVisibleSearchComp;
         }
         var animDef = {
@@ -124,8 +123,8 @@ define({
             "delay": 0
         };
         var callbacks = {
-            "animationStart": animationStartCallBack,
-            "animationEnd": animationEndCallBack
+            "animationStart": animationStartCallBack1,
+            "animationEnd": animationEndCallBack1
         };
         var animation = {
             animObj,
@@ -140,22 +139,22 @@ define({
     },
     animationSegmentListCategory: function(topStart, topEnd, opacityStart, opacityEnd, isNeedEndCallback, isVisibleSearchComp) {
         var animation = this.animationWidget(topStart, topEnd, opacityStart, opacityEnd, isNeedEndCallback, isVisibleSearchComp);
-        this.view.flxScrollMainContent.animate(animation.animObj, animation.animConfig, animation.callbacks);
+        this.view.flxMainContent.animate(animation.animObj, animation.animConfig, animation.callbacks);
     },
     onClickSearch: function() {
         this.animationSearchComponent("0", "10%", 0.0, 1.0, false, true);
-        this.animationSegmentListCategory("10%", "20%", 1.0, 1.0, null, null);
+        this.animationSegmentListCategory("0", "10%", 1.0, 1.0, null, null);
     },
     onClickCancelSearch: function() {
         this.animationSearchComponent("10%", "0", 1.0, 0.0, true, false);
-        this.animationSegmentListCategory("20%", "10%", 1.0, 1.0, null, null);
+        this.animationSegmentListCategory("10%", "0%", 1.0, 1.0, null, null);
         this.view.searchComponent.searchValue = "";
     },
     onSearchDone: function() {
         navigationForm("frmProductList", this.view.searchComponent.searchValue, "search");
     },
     postShow: function() {
-        if (!this.view.sgmCategories.isVisible) {
+        if (!this.view.flxMainContent.isVisible) {
             kony.application.showLoadingScreen(null, "Loading...", constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, null);
         }
     },

@@ -46,7 +46,7 @@
     ],
     "_top_": {
         "type": "string",
-        "value": "4%"
+        "value": "10%"
     },
     "_width_": {
         "type": "string",
@@ -62,7 +62,7 @@
     "groupcells": false,
     "hasSections": false,
     "id": "sgmCategories",
-    "ide_onRowClick": "AS_Segment_hcba23029f0b4eb48195bc14c0e0bffd",
+    "ide_onRowClick": "AS_Segment_c292883178654054b116a9e2b45de642",
     "info": null,
     "ipad": {
         "psp": {
@@ -75,9 +75,17 @@
         }
     },
     "iscustomlayout": false,
-    "isvisible": false,
+    "isvisible": true,
     "kuid": "b9b17b6e1f9b4fea973c0a810263ee9e",
     "masterdata": {},
+    "minheight": {
+        "type": "string",
+        "value": "90%"
+    },
+    "minwidth": {
+        "type": "string",
+        "value": "100%"
+    },
     "name": "kony.ui.SegmentedUI2",
     "needpageindicator": true,
     "pageoffdotimage": "pageoffdot.png",
@@ -85,7 +93,7 @@
     "paginationconfig": {
         "position": "bottom"
     },
-    "parent": "flxScrollMainContent",
+    "parent": "flxMainContent",
     "pf": "frmHome",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
