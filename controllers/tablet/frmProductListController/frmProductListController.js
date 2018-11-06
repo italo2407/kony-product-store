@@ -118,9 +118,9 @@ define({
   },
   
   verifyProductLength:function(products){
+    kony.store.setItem("productsCount", products.length);
    	if(products!==null && products.length==1){
-      	kony.store.setItem("productsCount", products.length);
-    	navigationForm("frmProductDetail",products[0].sku,null);
+      	navigationForm("frmProductDetail",products[0].sku,null);
     }
     else{
     	this.renderProductList(products);

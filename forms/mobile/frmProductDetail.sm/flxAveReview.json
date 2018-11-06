@@ -36,8 +36,8 @@
     "autogrowmode": 1,
     "canUpdateUI": true,
     "children": [
-        "lblAveReview",
-        "flxRating"
+        "flxRating",
+        "lblAveReview"
     ],
     "clipbounds": true,
     "containerweight": 100,
@@ -47,7 +47,7 @@
     "iscustomlayout": false,
     "isvisible": true,
     "kuid": "h0ba54428e944c4b970bfded874107c8",
-    "layouttype": 4,
+    "layouttype": 3,
     "name": "kony.ui.FlexContainer",
     "parent": "flxDetailProduct",
     "pf": "frmProductDetail",

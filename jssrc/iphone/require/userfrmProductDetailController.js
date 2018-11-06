@@ -52,7 +52,7 @@ define({
             var isVisibleAvgUserRating = (productDetail.customerReviewAverage === undefined || productDetail.customerReviewAverage === "null") ? false : true;
             this.view.flxAveReview.isVisible = isVisibleAvgUserRating;
             if (isVisibleAvgUserRating) {
-                this.view.lblAveReview.text = "Ave review:" + productDetail.customerReviewAverage;
+                this.view.lblAveReview.text = productDetail.customerReviewAverage;
                 var widthRating = this.calculateWidthForRating(productDetail.customerReviewAverage) + "%";
                 this.view.flxUnfilledStart.width = widthRating;
             }

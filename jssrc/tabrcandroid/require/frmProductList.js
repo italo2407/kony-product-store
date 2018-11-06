@@ -83,6 +83,7 @@ define("frmProductList", function() {
                 "isVisible": true,
                 "left": "0dp",
                 "needPageIndicator": true,
+                "onRowClick": controller.AS_Segment_f4f6a895fa4b440dbcc26b2dd6109fd2,
                 "pageOffDotImage": "pageoffdot.png",
                 "pageOnDotImage": "pageondot.png",
                 "retainSelection": false,
@@ -175,6 +176,7 @@ define("frmProductList", function() {
             "id": "frmProductList",
             "layoutType": kony.flex.FREE_FORM,
             "needAppMenu": false,
+            "preShow": controller.AS_Form_ca097d10a903466cbc81582e0de2d65d,
             "skin": "CopyslForm0cea54d45708444"
         }, {
             "displayOrientation": constants.FORM_DISPLAY_ORIENTATION_PORTRAIT,

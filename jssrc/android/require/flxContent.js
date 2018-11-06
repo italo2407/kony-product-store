@@ -29,7 +29,7 @@ define("flxContent", function() {
             "id": "lblName",
             "isVisible": true,
             "left": "5%",
-            "skin": "CopydefLabel0e626bc89c7544e",
+            "skin": "CopydefLabel0e2dca1bc270243",
             "text": "Label",
             "textStyle": {
                 "letterSpacing": 0,
@@ -129,7 +129,7 @@ define("flxContent", function() {
             "id": "lblTitle",
             "isVisible": true,
             "left": "5%",
-            "skin": "CopydefLabel0d5380e5beba843",
+            "skin": "CopydefLabel0ddb9a218480c47",
             "text": "Label",
             "textStyle": {
                 "letterSpacing": 0,

@@ -109,6 +109,7 @@
     "groupcells": false,
     "hasSections": false,
     "id": "sgmProductList",
+    "ide_onRowClick": "AS_Segment_f4f6a895fa4b440dbcc26b2dd6109fd2",
     "info": null,
     "ipad": {
         "psp": {

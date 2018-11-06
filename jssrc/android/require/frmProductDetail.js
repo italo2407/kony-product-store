@@ -3,7 +3,6 @@ define("frmProductDetail", function() {
         function addWidgetsfrmProductDetail() {
             this.setDefaultUnit(kony.flex.DP);
             var headerMaster = new com.qualifacts.training.headerMaster({
-                "autogrowMode": kony.flex.AUTOGROW_NONE,
                 "clipBounds": true,
                 "height": "10%",
                 "id": "headerMaster",
@@ -120,7 +119,7 @@ define("frmProductDetail", function() {
                 "id": "lblPrice",
                 "isVisible": true,
                 "left": "0dp",
-                "skin": "CopydefLabel0edf3d6c27b3447",
+                "skin": "CopydefLabel0dbdba793732243",
                 "text": "Label",
                 "textStyle": {
                     "letterSpacing": 0,
@@ -140,7 +139,7 @@ define("frmProductDetail", function() {
                 "id": "lblOnsale",
                 "isVisible": true,
                 "left": "101dp",
-                "skin": "CopydefLabel0fa5cf15d13794c",
+                "skin": "CopydefLabel0cd8e586b735446",
                 "text": "ON SALE!",
                 "textStyle": {
                     "letterSpacing": 0,
@@ -162,7 +161,7 @@ define("frmProductDetail", function() {
                 "clipBounds": true,
                 "id": "flxAveReview",
                 "isVisible": true,
-                "layoutType": kony.flex.FLOW_VERTICAL,
+                "layoutType": kony.flex.FLOW_HORIZONTAL,
                 "left": "0dp",
                 "skin": "slFbox",
                 "top": "5dp",
@@ -170,26 +169,6 @@ define("frmProductDetail", function() {
                 "zIndex": 1
             }, {}, {});
             flxAveReview.setDefaultUnit(kony.flex.DP);
-            var lblAveReview = new kony.ui.Label({
-                "id": "lblAveReview",
-                "isVisible": true,
-                "left": "35dp",
-                "skin": "CopydefLabel0b46f922cb94b45",
-                "text": "Label",
-                "textStyle": {
-                    "letterSpacing": 0,
-                    "strikeThrough": false
-                },
-                "top": "0dp",
-                "width": kony.flex.USE_PREFFERED_SIZE,
-                "zIndex": 1
-            }, {
-                "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
-                "padding": [0, 0, 0, 0],
-                "paddingInPixel": false
-            }, {
-                "textCopyable": false
-            });
             var flxRating = new kony.ui.FlexContainer({
                 "autogrowMode": kony.flex.AUTOGROW_NONE,
                 "clipBounds": true,
@@ -235,7 +214,27 @@ define("frmProductDetail", function() {
             flxUnfilledStart.setDefaultUnit(kony.flex.DP);
             flxUnfilledStart.add();
             flxRating.add(imgRating, flxUnfilledStart);
-            flxAveReview.add(lblAveReview, flxRating);
+            var lblAveReview = new kony.ui.Label({
+                "id": "lblAveReview",
+                "isVisible": true,
+                "left": "10dp",
+                "skin": "CopydefLabel0b46f922cb94b45",
+                "text": "Label",
+                "textStyle": {
+                    "letterSpacing": 0,
+                    "strikeThrough": false
+                },
+                "top": "3dp",
+                "width": kony.flex.USE_PREFFERED_SIZE,
+                "zIndex": 1
+            }, {
+                "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+                "padding": [0, 0, 0, 0],
+                "paddingInPixel": false
+            }, {
+                "textCopyable": false
+            });
+            flxAveReview.add(flxRating, lblAveReview);
             flxDetailProduct.add(lblName, flxPrice, flxAveReview);
             flxContent.add(imgProduct, flxDetailProduct);
             var flxDescription = new kony.ui.FlexContainer({
@@ -279,7 +278,7 @@ define("frmProductDetail", function() {
                 "id": "lblNumberReview",
                 "isVisible": true,
                 "left": "10dp",
-                "skin": "CopydefLabel0ida550097cf642",
+                "skin": "CopydefLabel0g3f4548772c54a",
                 "textStyle": {
                     "letterSpacing": 0,
                     "strikeThrough": false

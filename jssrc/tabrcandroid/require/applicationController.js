@@ -16,6 +16,7 @@ define({
         kony.mvc.registry.add("flxContent", "flxContent", "flxContentController");
         kony.mvc.registry.add("flxSgmContainer", "flxSgmContainer", "flxSgmContainerController");
         kony.mvc.registry.add("frmHome", "frmHome", "frmHomeController");
+        kony.mvc.registry.add("frmProductDetail", "frmProductDetail", "frmProductDetailController");
         kony.mvc.registry.add("frmProductList", "frmProductList", "frmProductListController");
         setAppBehaviors();
     },

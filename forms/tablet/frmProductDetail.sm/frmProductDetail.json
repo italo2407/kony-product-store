@@ -20,13 +20,18 @@
     "addWidgetsdone": false,
     "allboxes": [],
     "android": {
+        "ide_onDeviceBack": "AS_Form_bca862d7054f42289e6a14115503fd85",
         "needAppMenu": false,
         "psp": {
             "windowSoftInputMode": 2
         }
     },
     "canUpdateUI": true,
-    "children": [],
+    "children": [
+        "headerMaster",
+        "flxBack",
+        "flxMainContent"
+    ],
     "containerweight": 100,
     "controllerInfo": {
         "default": {
@@ -42,6 +47,7 @@
     "displayorientation": 1,
     "enabledforidletimeout": false,
     "id": "frmProductDetail",
+    "ide_preShow": "AS_Form_cc58a33280044843865e92b4d2ae43fe",
     "info": null,
     "initdone": false,
     "inputaccessoryviewtype": 4,
