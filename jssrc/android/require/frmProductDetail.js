@@ -299,7 +299,7 @@ define("frmProductDetail", function() {
                 "bounces": true,
                 "clipBounds": true,
                 "enableScrolling": true,
-                "height": "100%",
+                "height": "71%",
                 "horizontalScrollIndicator": true,
                 "id": "flxScrollReviewUserContent",
                 "isVisible": true,
@@ -339,7 +339,7 @@ define("frmProductDetail", function() {
                     "lblTitle": "Label"
                 }],
                 "groupCells": false,
-                "height": "200%",
+                "height": "100%",
                 "id": "sgmReviews",
                 "isVisible": true,
                 "left": "0%",

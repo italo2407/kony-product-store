@@ -3,7 +3,6 @@ define("frmProductDetail", function() {
         function addWidgetsfrmProductDetail() {
             this.setDefaultUnit(kony.flex.DP);
             var headerMaster = new com.qualifacts.training.headerMaster({
-                "autogrowMode": kony.flex.AUTOGROW_NONE,
                 "clipBounds": true,
                 "height": "10%",
                 "id": "headerMaster",
@@ -353,7 +352,7 @@ define("frmProductDetail", function() {
                 "bounces": true,
                 "clipBounds": true,
                 "enableScrolling": true,
-                "height": "100%",
+                "height": "71%",
                 "horizontalScrollIndicator": true,
                 "id": "flxScrollReviewUserContent",
                 "isVisible": true,

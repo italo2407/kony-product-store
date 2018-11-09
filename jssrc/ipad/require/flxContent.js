@@ -52,7 +52,7 @@ define("flxContent", function() {
             "left": "10%",
             "skin": "slFbox",
             "top": "7dp",
-            "width": "30%",
+            "width": "35%",
             "zIndex": 1
         }, {}, {});
         flxRatingContent.setDefaultUnit(kony.flex.DP);
@@ -109,7 +109,7 @@ define("flxContent", function() {
             "text": "5",
             "textStyle": {},
             "top": "1dp",
-            "width": "25%",
+            "width": "35%",
             "zIndex": 1
         }, {
             "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
