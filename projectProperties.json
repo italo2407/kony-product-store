@@ -29,7 +29,7 @@
     "mwhttpsportkey": "",
     "defaulttheme": "defaultTheme",
     "nativeContainerProperties": {
-        "isModified": false,
+        "isModified": true,
         "isEnableJSContainer": true,
         "isEnableJSContainerAndroid": true,
         "isEnableJSContaineriOS": true
